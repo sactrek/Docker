@@ -1,0 +1,5 @@
+FROM java:8
+COPY Fecha.jar .
+WORKDIR .
+RUN javac Fecha.java
+CMD  ["java", "Fecha"]

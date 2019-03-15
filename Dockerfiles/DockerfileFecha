@@ -1,0 +1,5 @@
+FROM java:8
+COPY . /Users/sactrek/dockerfiles/Fecha.java
+WORKDIR /Users/sactrek/dockerfiles/Fecha.java
+RUN javac Fecha.java
+CMD ["java", "Fecha"]
